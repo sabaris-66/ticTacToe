@@ -1,0 +1,68 @@
+html,
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header,
+.winner,
+.replay{
+    width: 30%;
+    height: 10%;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+
+.container{
+    width: 30%;
+    height: 50%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    border: 10px solid white;
+    background-color: white;
+    row-gap: 15px;
+    column-gap: 15px;
+    padding: 0;
+    border-radius: 20px;
+}
+
+.cell{
+    
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.cell:hover,
+.replay:hover{
+    background-color: gray;
+    border: 10px solid black;
+}
+
+/* .replay:hover{
+    color:black;
+    background-color: white;
+} */
+
